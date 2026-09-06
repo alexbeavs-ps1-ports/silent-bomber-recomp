@@ -1,0 +1,24 @@
+{
+  "schema": "psx.redump-disc-set.v1",
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "Silent Bomber (Europe).cue",
+      "bin_name": "Silent Bomber (Europe).bin",
+      "size": 383601792,
+      "md5": "1fefcbc8612457930fa9e6f421bd8a43",
+      "sha1": "c9293c685b16321c08e8f4f5cf4f93f21cf8df27",
+      "crc32": "5f5e85e2",
+      "track_count": 1,
+      "tracks": [
+        {
+          "name": "Silent Bomber (Europe).bin",
+          "size": "383601792",
+          "crc": "5f5e85e2",
+          "md5": "1fefcbc8612457930fa9e6f421bd8a43",
+          "sha1": "c9293c685b16321c08e8f4f5cf4f93f21cf8df27"
+        }
+      ]
+    }
+  ]
+}

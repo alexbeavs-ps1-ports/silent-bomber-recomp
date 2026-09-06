@@ -1,0 +1,44 @@
+
+[game]
+name = "Silent Bomber"
+id = "SLES-02792"
+players = 1
+exe = "disc/SLES_027.92"
+disc = "disc/Silent Bomber (Europe).cue"
+load_address = "0x80010000"
+entry_pc = "0x8008F364"
+text_size = "0x000CF800"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Silent Bomber (Europe).bin"
+cue_name = "Silent Bomber (Europe).cue"
+boot_exe = "SLES_027.92"
+known_sizes = [383601792]
+known_md5 = ["1fefcbc8612457930fa9e6f421bd8a43"]
+known_sha1 = ["c9293c685b16321c08e8f4f5cf4f93f21cf8df27"]
+known_crc32 = ["5f5e85e2"]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "Silent Bomber Recompiled"
+memcard_dir = "saves"
+openbios = false
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "51e06204fccaf0c5d97e9076a50877fe60bf889688756d7233cf4316c23bf9f6"
